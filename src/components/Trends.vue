@@ -1,10 +1,10 @@
 <template lang="pug">
-h1 Dashboard
+h1 Trends
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Trends',
 };
 </script>
 
