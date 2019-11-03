@@ -3,8 +3,8 @@ import VueRouter from 'vue-router';
 import 'bootstrap';
 
 import AppVue from './App.vue';
-import HomeVue from './components/Home.vue';
-import WorkoutVue from './components/Workout.vue';
+import DashboardVue from './components/Dashboard.vue';
+import WorkoutVue from './components/workout/Workout.vue';
 import TrendsVue from './components/Trends.vue';
 import HistoryVue from './components/History.vue';
 
@@ -14,10 +14,11 @@ import HistoryVue from './components/History.vue';
  */
 const router = new VueRouter({
   routes: [
-    { path: '/', component: HomeVue },
-    { path: '/workout', component: WorkoutVue },
-    { path: '/trends', component: TrendsVue },
-    { path: '/history', component: HistoryVue },
+    { path: '/', redirect: '/dashboard' },
+    { path: '/dashboard', component: DashboardVue },
+    { path: '/workout', component: WorkoutVue, name: 'Workout' },
+    { path: '/trends', component: TrendsVue, name: 'Trends' },
+    { path: '/history', component: HistoryVue, name: 'History' },
   ],
   linkActiveClass: 'active',
 });

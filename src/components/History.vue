@@ -1,5 +1,6 @@
 <template lang="pug">
-h1 History
+.container
+  h1 History
 </template>
 
 <script>

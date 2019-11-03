@@ -1,5 +1,6 @@
 <template lang="pug">
-h1 Trends
+.container
+  h1 Trends
 </template>
 
 <script>

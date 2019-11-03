@@ -1,4 +1,4 @@
-# Training Metrics
+# Workout Metrics
 
 ## Project setup
 ```
@@ -12,10 +12,10 @@ npm run serve
 
 ## RESTful Hypermedia API (samples)
 
-### List of body parts to train
+### List of muscle groups to train
 Uri | Method | Auth | HTTPS | CORS |
 |---|---|---|---|---|
-| /bodybuilding | GET | `OAuth` | yes | yes |
+| /muscle-groups | GET | `OAuth` | yes | yes |
 
 ```json
 {
@@ -28,7 +28,7 @@ Uri | Method | Auth | HTTPS | CORS |
       "description": "",
       "links": [
         {
-          "href": "/bodybuilding/72255d4849af8ed6e0df1173",
+          "href": "/muscle-groups/72255d4849af8ed6e0df1173",
           "rel": "self",
           "method": "GET"
         }
@@ -38,12 +38,12 @@ Uri | Method | Auth | HTTPS | CORS |
   ],
   "links": [
     {
-      "href": "/bodybuilding",
+      "href": "/muscle-groups",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "/bodybuilding/workouts",
+      "href": "/muscle-groups/workouts",
       "rel": "workouts",
       "method": "GET"
     }
@@ -54,7 +54,7 @@ Uri | Method | Auth | HTTPS | CORS |
 ### Body part description
 Uri | Method | Auth | HTTPS | CORS |
 |---|---|---|---|---|
-| /bodybuilding/{id} | GET | `OAuth` | yes | yes |
+| /muscle-groups/{id} | GET | `OAuth` | yes | yes |
 
 ```json
 {
@@ -68,7 +68,7 @@ Uri | Method | Auth | HTTPS | CORS |
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "links": [
         {
-          "href": "/bodybuilding/workouts/03223056l66712u6op578ke65ta",
+          "href": "/muscle-groups/workouts/03223056l66712u6op578ke65ta",
           "rel": "self",
           "method": "GET"
         }
@@ -78,7 +78,7 @@ Uri | Method | Auth | HTTPS | CORS |
   ],
   "links": [
     {
-      "href": "/bodybuilding/72255d4849af8ed6e0df1173",
+      "href": "/muscle-groups/72255d4849af8ed6e0df1173",
       "rel": "self",
       "method": "GET"
     }
